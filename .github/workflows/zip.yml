@@ -1,0 +1,16 @@
+name: Zip All Files
+on:
+  # Triggers the workflow on push or pull request events but only for the main branch
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: Generate ZIP
+        uses: MineAndDine96/MC-Litematics@master
+        with:
+          filename: 'litematics.zip'
