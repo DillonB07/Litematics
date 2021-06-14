@@ -1,2 +1,2 @@
-- name: action-build-zip
-  uses: byteever/action-build-zip@1
+name: action-build-zip
+uses: byteever/action-build-zip@1
