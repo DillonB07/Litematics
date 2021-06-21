@@ -2,7 +2,7 @@ name: action-build-zip
 on: [pull_request, push]
   # You may pin to the exact commit or the version.
   # uses: byteever/action-build-zip@23d77e1778849e35de1b4e9dbb16d4b64a4714e6
-  uses: MineAndDine96/MC-Litematics@main
-  with:
+    uses: MineAndDine96/MC-Litematics@main
+    with:
     # See byteever/action-zip README.md for more info
-    filename: Litematics.zip # optional
+        filename: Litematics.zip # optional
