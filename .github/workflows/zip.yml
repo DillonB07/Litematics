@@ -5,12 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - name: Zip Files
+    - name: Archive Release
       uses: thedoctor0/zip-release@master
       with:
         filename: 'release.zip'
-        exclusions: '*.git* /*node_modules/* .editorconfig'
-    - name: capture build artifacts
-      uses: actions/upload-artifact@v2
-      with:
-        name: Litematics
