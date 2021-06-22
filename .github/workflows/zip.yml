@@ -1,5 +1,5 @@
 name: Create Archive
-on: [push]
+on: [push, pull_request, workflow_dispatch]
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -10,3 +10,7 @@ jobs:
       with:
         filename: 'release.zip'
         exclusions: '*.git* /*node_modules/* .editorconfig'
+    - name: capture build artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: Litematics
